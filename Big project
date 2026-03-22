@@ -1,0 +1,29 @@
+def ohm(I = None, U = None, R = None):
+	if U is not None and I is not None:
+		R = U / I
+		print(f"Сопровотевление равно: {R} Ом ")
+		return R				
+	elif R is not None and I is not None:
+		U = R * I
+		print(f"Напряжение тока: {U} В")
+		return U
+	elif R is not None and U is not None:
+		I = U / R
+		print(f"Сила тока равна: {I} А")
+		return I
+
+a = int(input("Введите что надо найти: 1=R, 2= U, 3= I: "))
+if a == 1:
+		x = int(input("Введите силу тока: "))
+		y = int(input("Введите напряжение: "))
+		z = ohm(U = y, I = x)	
+elif a == 2:
+	c= int(input("Введите сопровотевление: "))
+	m = int(input("Введите силу тока: "))
+	b= ohm(R = c, I = m)
+elif a == 3:
+	n= int(input("Введите сопровотнвление: "))
+	v = int(input("Введите напряжение: "))
+	j = ohm(R = n, U = v)
+else:
+	print("ошибка")

@@ -22,7 +22,7 @@ elif a == 2:
 	m = int(input("Введите силу тока: "))
 	b= ohm(R = c, I = m)
 elif a == 3:
-	n= int(input("Введите сопровотнвление: "))
+	n= int(input("Введите сопровотевление: "))
 	v = int(input("Введите напряжение: "))
 	j = ohm(R = n, U = v)
 else:
